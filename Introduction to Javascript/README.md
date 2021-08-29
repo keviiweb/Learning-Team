@@ -14,6 +14,8 @@ or you can use an online editor for now: https://jsfiddle.net/
 
 ### Challenge #1: NRIC checker
 
+![NRIC example](nric_example.png)
+
 Ever wondered how NRIC/FIN numbers are generated? Are they generated randomly using RNG? For those who don't know, NRIC numbers actually follow an algorithm. The first letter will be either 'S', 'T', 'F', or 'G', followed by a 7-digit serial number, and lastly a checksum letter. By calculating the checksum letter, we can determine the validity of the given NRIC number.
 
 > **<ins>Steps to check for validity</ins>**  
