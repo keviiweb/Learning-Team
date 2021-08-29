@@ -1,8 +1,9 @@
-# Learning-Team
-### Introduction to Javascript
+# Introduction to Javascript
 
-The Web Application curently uses React (frontend) and Node+Express (backend).
-This short exercise aims to provide you with the basic JS syntax knowledge so that you can help out with the project in the future.
+### Introduction
+The Web Application curently uses React (frontend) and Node+Express (backend).  
+This short exercise aims to provide you with the basic JS syntax knowledge so that you can help out with the project in the future.  
+Don't worry, this is **NOT** an assignment, but just a task to help you learn. Feel free to ask us for help if you get stuck. Also, since everyone will be uploading the code in this repo, you can refer to other's code if you are stuck. However, don't just copy blindly. Copy with understaning.
 
 ### Setting up
 We highly recommend using **Visual Studio Code** as this is the default IDE the team is using, but you are free to use any editor you like.
@@ -13,17 +14,18 @@ or you can use an online editor for now: https://jsfiddle.net/
 
 ### Challenge #1: NRIC checker
 
-Ever wondered how NRIC/FIN numbers are generated? Are they generated randomly using RNG? For those who don't know, NRIC numbers actually follow an algorithm. The first letter will be either 'S', 'T', 'F', or 'G', followed by a 7-digit serial number, and lastly a checksum letter. By calculating the checksum value, we can determine the validity of the given NRIC number.
+Ever wondered how NRIC/FIN numbers are generated? Are they generated randomly using RNG? For those who don't know, NRIC numbers actually follow an algorithm. The first letter will be either 'S', 'T', 'F', or 'G', followed by a 7-digit serial number, and lastly a checksum letter. By calculating the checksum letter, we can determine the validity of the given NRIC number.
 
-> Multiply first digit by 2, second by 7, third by 6, fourth by 5, fifth by 4, sixth by 3, seventh by 2. Add the total together. <br>
-> If the first letter of the NRIC starts with T or G, add 4 to the total. <br>
-> Divide the number by 11 and get the remainder. <br>
->  Depending on the type of IC, use the following to check if the last alphabet matches the remainder value you've calculated: <br>
+> **<ins>Steps to check for validity</ins>**  
+> 1. Multiply first digit by 2, second by 7, third by 6, fourth by 5, fifth by 4, sixth by 3, seventh by 2. Add the total together. <br>
+> 2.If the first letter of the NRIC starts with T or G, add 4 to the total. <br>
+> 3.Divide the number by 11 and get the remainder. <br>
+> 4.Depending on the type of IC, use the following to check if the last alphabet matches the remainder value you've calculated:
 -If the IC starts with S or T: 0=J, 1=Z, 2=I, 3=H, 4=G, 5=F, 6=E, 7=D, 8=C, 9=B, 10=A <br>
 -If the IC starts with F or G: 0=X, 1=W, 2=U, 3=T, 4=R, 5=Q, 6=P, 7=N, 8=M, 9=L, 10=K <br>
 
 Write a simple JS script to check for the validity of a given NRIC/FIN number.
-This challenge will mainly test you on your understanding of the following concepts:
+This challenge will mainly test you on your understanding of the following concepts (you will be using most of these). 
 - if-else statements
 - loops
 - basic string methods
@@ -43,13 +45,14 @@ Try to implement as many of these requirements as possible.
 
 ###### Example
 
-Write a function *nric_checker(nric)* to take in a single NRIC number to check.
-Function and input: `nric_checker('S0016274D')`
-Expected output: `Valid nric`
+Write a function *nric_checker(nric)* to take in a single NRIC number to check.  
+Function and input: `nric_checker('S0016274D')`  
+Expected output: `Valid nric` 
 
-Write a function *nrics_checker(nric_array)* to take in an array of NRIC numbers to check. You should use your function in the first part above.
-Function and input: `nrics_checker(['awr','S3353379I','twefsf','T0677228A','S1038475A','T1765643G'])`
-Expected output: <br>
+Write a function *nrics_checker(nric_array)* to take in an array of NRIC numbers to check. You should use your function in the first part above. <br>
+Function and input:  
+`nrics_checker(['awr','S3353379I','twefsf','T0677228A','S1038475A','T1765643G'])`  
+Expected output:  
 `Nric: awr Status: Invalid length` <br>
 `Nric: S3353379I Status: Valid nric` <br>
 `Nric: twefsf Status: Invalid length` <br>
