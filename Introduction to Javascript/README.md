@@ -65,7 +65,7 @@ Expected output:
 
 ### Submission instructions
 
-Name your file as [yourname]_nric_challenge.js  _eg YunusAliBaba_nric_challenge.js_  
+Name your file as [yourname]_nric_challenge.js  _eg YunusAliBaba_nric_challenge.js_ and add it to the submission folder. 
 
 Those who are familiar with Github can add and commit your file to this repo. For those who have not used Github before, it's fine, just upload your .js file directly using Add file -> Upload files
 
