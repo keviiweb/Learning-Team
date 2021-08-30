@@ -1,5 +1,7 @@
 https://javascript.info/intro --> General information on JavaScript not required but for context 
-https://www.w3schools.com/js/default.asp --> Focus on:
+
+https://www.w3schools.com/js/default.asp --> 
+Focus on:
 •	Syntax 
 •	comments 
 •	Variables
@@ -15,8 +17,5 @@ https://www.w3schools.com/js/default.asp --> Focus on:
 •	Booleans, comparison, conditions, switch and loops 
 •	Function definitions, Parameters, Invocation 
 •	Object Definitions 
+
 https://www.youtube.com/watch?v=W6NZfCO5SIk --> Live tutorial of most of the above start at section ‘Variable’ 
-
-
- 
-
