@@ -1,0 +1,22 @@
+https://javascript.info/intro --> General information on JavaScript not required but for context 
+https://www.w3schools.com/js/default.asp --> Focus on:
+•	Syntax 
+•	comments 
+•	Variables
+•	Let and const 
+•	Operators 
+•	Arithmetic 
+•	Data Types 
+•	Functions 
+•	Objects 
+•	Strings, Strings Methods, String search, String templates 
+•	Numbers, Number Methods 
+•	Arrays, array methods, array sort (no need to go through the algos for now), Array Iteration, Array const
+•	Booleans, comparison, conditions, switch and loops 
+•	Function definitions, Parameters, Invocation 
+•	Object Definitions 
+https://www.youtube.com/watch?v=W6NZfCO5SIk --> Live tutorial of most of the above start at section ‘Variable’ 
+
+
+ 
+
