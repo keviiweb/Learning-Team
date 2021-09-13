@@ -1,13 +1,16 @@
 function nric_checker(nric) {
   var sum = 0;
-  var dict1 = { 0: "J", 1: "Z", 2: "I", 3: "H", 4: "G", 5: "F", 6: "E", 7: "D", 8: "C", 9: "B", 10: "A",};
-  var dict2 = { 0: "X", 1: "W", 2: "U", 3: "T", 4: "R", 5: "Q", 6: "P", 7: "N", 8: "M", 9: "L", 10: "K",};
+  var dict1 = { 0: "J", 1: "Z", 2: "I", 3: "H", 4: "G", 5: "F", 6: "E", 7: "D", 8: "C", 9: "B", 10: "A", };
+  var dict2 = { 0: "X", 1: "W", 2: "U", 3: "T", 4: "R", 5: "Q", 6: "P", 7: "N", 8: "M", 9: "L", 10: "K", };
   var splitted = nric.split("");
   if (splitted.length != 9) {
     return "Invalid length";
   }
+  if (!['S','T','F','G'].includes(splitted[0].toUpperCase())) {
+    return "Invalid first letter";
+  }
   sum = parseInt(splitted[1]) * 2 + parseInt(splitted[2]) * 7 + parseInt(splitted[3]) * 6 + parseInt(splitted[4]) * 5 
-      + parseInt(splitted[5]) * 4 + parseInt(splitted[6]) * 3 + parseInt(splitted[7]) * 2;
+        + parseInt(splitted[5]) * 4 + parseInt(splitted[6]) * 3 + parseInt(splitted[7]) * 2;
 
   if (splitted[0] == "T" || splitted[0] == "S") {
     sum += 4;
