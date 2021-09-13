@@ -11,9 +11,10 @@ function nric_checker(nric) {
   }
   sum = parseInt(splitted[1]) * 2 + parseInt(splitted[2]) * 7 + parseInt(splitted[3]) * 6 + parseInt(splitted[4]) * 5 
         + parseInt(splitted[5]) * 4 + parseInt(splitted[6]) * 3 + parseInt(splitted[7]) * 2;
-
-  if (splitted[0] == "T" || splitted[0] == "S") {
+  if (splitted[0] == "T" || splitted[0] == "G") {
     sum += 4;
+  }
+  if (splitted[0] == "T" || splitted[0] == "S") {
     if (dict1[sum % 11] != splitted[8]) {
       return "Invalid nric checksum";
     }
